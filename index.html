@@ -1,0 +1,29 @@
+<!doctype html>
+  <html>
+    <head>
+	  <title>object</title>
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+  <body>
+  <script>
+   //4.
+        document.write("<br>");
+        document.write("<br>");
+        document.write("4.using many array in one array changed in find method");
+		document.write("<br>");
+        document.write("<br>");
+
+        const employees = [
+            {name:"David Carlson",age:30},
+            {name:"John Cena",age:34},
+            {name:"Mike Sheridan",age:25},
+            {name:"John Carte",age:50}
+        ];
+		
+		let fourthQ = employees.find(function(fourth){
+		    return fourth.age>30
+		});
+		document.write(JSON.stringify(fourthQ));
+  </script>
+ </body>
+ </html>
